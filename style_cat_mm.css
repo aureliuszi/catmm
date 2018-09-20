@@ -1,0 +1,23 @@
+nav li {
+    display: inline-block;
+    width: 20%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+nav a {
+    text-decoration: none
+}
+
+a.current {
+    text-transform: uppercase
+
+}
+
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none
+}
+
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
