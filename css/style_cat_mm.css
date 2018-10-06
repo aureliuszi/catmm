@@ -54,7 +54,7 @@ div article {
 }
 
 div a {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 div.banner {
@@ -71,4 +71,9 @@ figure {
 
 figure img {
     width: 95%
+}
+
+i {
+    display: block;
+    width: 440px;
 }
