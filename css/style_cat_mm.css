@@ -59,7 +59,7 @@ div a {
 
 div.banner {
     grid-column: 1 / 5 ;
-    background-image: url("./images/talent/mreowmi/mreowmi_4.jpg");
+    background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
     height: 15vh;
     /* justify-self: start; */
 }
