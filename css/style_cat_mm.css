@@ -1,3 +1,8 @@
+body{
+    background-color: #ccffcc;
+    color: #000033;
+}
+
 nav li {
     display: inline-block;
     width: 20%;
@@ -13,21 +18,8 @@ a.current {
 
 }
 
-
-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-content: start;
-    grid-gap: 0px;
-
-}
-
-div header {
-    grid-column-start: span 3;
-    font-family: 'Merriweather', serif;
-    font-size: 30px;
-
+a:visited{
+    color: #000033;
 }
 
 div {
@@ -39,29 +31,8 @@ div h1 span {
     font-size: 15px;
 }
 
-div > h2 {
-    grid-column-start: span 4;
-    font-size: 25px;
-}
-
-div > h3 {
-    grid-column-start: span 4;
-    font-size: 25px;
-}
-
-div article {
-    grid-column-start: span 4;
-}
-
 div a {
     font-weight: bold;
-}
-
-div.banner {
-    grid-column: 1 / 5 ;
-    background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
-    height: 15vh;
-    /* justify-self: start; */
 }
 
 figure {
@@ -70,10 +41,133 @@ figure {
 }
 
 figure img {
-    width: 95%
+    width: 100%
 }
 
-i {
-    display: block;
-    width: 440px;
+
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: start;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+}
+
+
+div header {
+    grid-column-start: span 2;
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+}
+
+div > h2 {
+    grid-column-start: span 2;
+    font-size: 25px;
+}
+
+div > h2 {
+    grid-column-start: span 2;
+    font-size: 25px;
+}
+
+div article {
+    display: inline;
+    grid-column-start: span 2;
+    font-size: 25px;
+}
+div > h3 {
+    display: inline;
+    grid-column-start: 2 span 2;
+    font-size: 25px;
+}
+div.banner {
+    grid-column: 1 / 3 ;
+    background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
+    height: 50vh;
+    /* justify-self: start; */
+}
+
+div footer {
+    grid-column-start: 2;
+}
+
+@media screen and (min-width:500px) {
+
+    div header {
+        grid-column-start: span 2;
+        font-family: 'Merriweather', serif;
+        font-size: 80px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: start;
+        grid-gap: 10px;
+        grid-auto-flow: row;
+    }
+    div header {
+        grid-column-start: span 3;
+        font-family: 'Merriweather', serif;
+        font-size: 80px;
+    }
+    div > h2 {
+        grid-column-start: span 3;
+        font-size: 25px;
+    }
+    div article {
+        display: inline;
+        grid-column-start: span 3;
+        font-size: 25px;
+    }
+    div > h3 {
+        display: inline;
+        grid-column-start: 2 span 3;
+        font-size: 25px;
+    }
+    div.banner {
+        grid-column: 1 / 4 ;
+        background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
+        height: 50vh;
+        /* justify-self: start; */
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    nav{
+        margin: 0 20vw;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 20%;
+        font-family: 'Merriweather', serif;
+    }
+    
+
+    div {
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: start;
+        grid-gap: 10px;
+        grid-auto-flow: row;
+        margin: 0 20vw;
+        
+    }
+
+    div.banner {
+        background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
+        height: 50vh;
+        grid-column: 1 span 3;
+        margin: 0;
+    }
+
 }
