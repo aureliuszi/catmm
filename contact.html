@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>contact - cat mm</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel = "stylesheet" type = text/css href = "css/style_cat_mm.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>contact - cat m.m.</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel = "stylesheet" type = text/css href = "css/default.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel = "stylesheet" type = text/css href = "css/style_cat_mm.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
-    
+    <a href="#indexmain" class="skip" tabindex="0">Skip to content</a>
 
-    <nav>
+    <nav class="bootstrap nav nav-tabs navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.htm">cat m.m.</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link"  href="index.html">home</a>
+                <a class="nav-item nav-link" href="talent.html">talent<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">about</a>
+                <a class="nav-item nav-link active" href="contact.html">contact<span class="sr-only">(current)</span></a>
+            </div>
+            </div>
+    </nav>
+
+    <nav class = "big_menu">
         <ul>
             <li><a href = index.html>home</a></li>
             <li><a href = talent.html>talent</a></li>
@@ -22,16 +42,46 @@
         </ul>
     </nav>
 
-    <div>
-        <header>
-                <h1><a href = index.html>cat mm</a><span> contact</span></h1></header>
-        <h2>contact</h2>
-        <article>
-            <p>we are very excited for you to contact us.</p> 
-            <p>meow meow meow</p>
-            <p>you can reach us through our email address <a href = mailto:catmm@catmm.com>catmm@catmm.com</a></p>
-        </article>    
-    </div>
+    
+
+    <main>
+        <div id = "indexmain">
+            <header>
+                    <h1><a href = index.html>cat m.m.</a></h1></header>
+            <h2>contact</h2>
+            <article>
+                <h3>we are very excited for you to contact us.</h3>
+                <p>meow meow meow</p>
+                <p>you can reach us through our email address <a href = mailto:catmm@catmm.com>catmm@catmm.com</a></p>
+            </article> 
+            <br>
+            <br>
+            <article>   
+                <h3>as an alternative, we leave you our contact form here! </h3>
+
+                <br>
+
+                <form action="#" method = "post" id="contact" onsubmit=" return checkForm()">
+                    <fieldset> 
+                        <legend>contact us through our form!</legend>
+                        <label for="name">your name:</label>
+                        <input type="text" id = "name"><br/>
+                        <label> your email: <input type="email" id="email">      
+                        </label><br/>
+                        <label for="phone">your phone number:</label>
+                        <input type="tel" id="phone"><br>
+                        <label for="comment">enter your message:</label>
+                        <textarea rows="4" cols="50" name = "comment" id="comment" form="contact" aria-label="enter your message in the textbox">
+                        </textarea>
+                        <input type = "submit" value = "send!"></fieldset>
+                </form>
+
+                
+
+            </article> 
+        </div>
+        </main>  
+    
     
     
     <br>
@@ -47,5 +97,55 @@
         </footer>
     </div>
 
+    <script>
+            function checkForm(){
+                if ((document.getElementById("phone").value == 0) && (document.getElementById("email").value == 0)){     
+                    alert("Please enter your contact (phone or email) information before proceeding.");
+                    return false;
+                    }
+                else {
+                    return true;
+                    } 
+            }
+            </script>
+
+<script>
+
+            
+        $("nav li a").focus(function(){
+          $(this).css("background-color", "#FFDEDD");
+        });
+
+
+        $("nav li a").blur(function(){
+          $(this).css("background-color", "#D0EBFF");
+          $("nav li").css("background-color", "#D0EBFF");
+        });
+        
+        $('nav li').hover(function(){
+            $(this).css("background-color", "#FFDEDD")},
+            function(){
+            $(this).css("background-color", "#D0EBFF");
+        });
+
+        
+        $(".skip").focus(function(){
+          $(this).css("overflow", "visible");
+        });
+        
+        $(".skip").blur(function(){
+          $(this).css("overflow", "hidden");
+        });
+        
+        </script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+
 </body>
+
+
+
 </html>

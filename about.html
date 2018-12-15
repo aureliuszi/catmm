@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>about - cat mm</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel = "stylesheet" type = text/css href = "css/style_cat_mm.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>about- cat m.m.</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel = "stylesheet" type = text/css href = "css/default.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel = "stylesheet" type = text/css href = "css/style_cat_mm.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
-    
+    <a href="#indexmain" class="skip" tabindex="0">Skip to content</a>
 
-    <nav>
+    <nav class="bootstrap nav nav-tabs navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.htm">cat m.m.</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link"  href="index.html">home</a>
+                <a class="nav-item nav-link" href="talent.html">talent</a>
+                <a class="nav-item nav-link active" href="about.html">about<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="contact.html">contact</a>
+            </div>
+            </div>
+    </nav>
+
+    <nav class = "big_menu">
         <ul>
             <li><a href = index.html>home</a></li>
             <li><a href = talent.html>talent</a></li>
@@ -21,17 +41,21 @@
             <li><a href = contact.html>contact</a></li>
         </ul>
     </nav>
-
-    <div>
+    <main>
+    <div id = "indexmain">
         <header>
-                <h1><a href = index.html>cat mm</a><span> about</span></h1></header>
+                <h1><a href = index.html>cat m.m.</a></h1></header>
+        
+        
         <article>
                 <h2>about us</h2>
-                <p>as the very first modelling agency by cats, for cats, cat mm prides itself in its unique position in the market</p>
+                <p>as the very first modelling agency by cats, for cats, cat m.m. prides itself in its unique position in the market</p>
                 <p>we guarantee that the purr-fect face is waiting for you amongst our lineup</p>
                 <p>explore our models using the talent button to get started!</p>
         </article>
+        
     </div>
+    </main>
 
 
     <br>
@@ -46,5 +70,42 @@
             <a href = "https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </footer>
     </div>
+
+    <script>
+
+            
+            $("nav li a").focus(function(){
+              $(this).css("background-color", "#FFDEDD");
+            });
+    
+
+            $("nav li a").blur(function(){
+              $(this).css("background-color", "#D0EBFF");
+              $("nav li").css("background-color", "#D0EBFF");
+            });
+            
+            $('nav li').hover(function(){
+                $(this).css("background-color", "#FFDEDD")},
+                function(){
+                $(this).css("background-color", "#D0EBFF");
+            });
+    
+            
+            $(".skip").focus(function(){
+              $(this).css("overflow", "visible");
+            });
+            
+            $(".skip").blur(function(){
+              $(this).css("overflow", "hidden");
+            });
+            
+            </script>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
 </body>
+
+
 </html>
