@@ -1,16 +1,31 @@
 body{
-    background-color: #ffffcc;
     color: #000033;
+    background-color:#FFDEDD;
+}
+
+.skip {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    text-align: left;
+    display: block;
+    overflow: hidden;
+
+}
+
+a.skip {
+    color: blue;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     width: 20%;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto';
 }
 
 nav a {
-    text-decoration: none
+    text-decoration: none;
+    color: #000033;
 }
 
 a.current {
@@ -22,13 +37,20 @@ a:visited{
     color: #000033;
 }
 
+
+div header a {
+    font-size: 80px;
+}
+
 div {
-    font-family: 'Merriweather', 'serif';
+    font-family: 'Roboto', 'serif';
     font-size: 15px;
 }
 
-div h1 span {
-    font-size: 15px;
+h1 {
+    font-size: 80px;
+    font-family: "Merriweather";
+    font-weight: bold;
 }
 
 div a {
@@ -88,19 +110,101 @@ div.banner {
     background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
     height: 50vh;
     border-radius: 25px;
+    padding: 10px;
     /* justify-self: start; */
 }
 
 div footer {
-    grid-column-start: 2;
+    grid-column-start: span 2;
+    font-size: 25px;
 }
 
+form {
+    background-color: #D3BEE8;
+    padding: 8px;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black;
+}
+
+nav.big_menu, header {
+    display: none;
+    
+    
+}
+
+.navbar-brand{
+
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 1rem;
+    font-size: 2.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    font-family: "Merriweather";
+    font-weight: bold;
+
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6;
+}
+
+
+
 @media screen and (min-width:500px) {
+
+ 
+    a.skip {
+        color: white;
+    }
+    nav.bootstrap{
+        display:none;
+    }
 
     div header {
         grid-column-start: span 2;
         font-family: 'Merriweather', serif;
         font-size: 80px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 0 10%;
+
+    }
+
+    nav.big_menu {
+        display:block;
+        background: #000033;
+        height: 2 vh;
+        padding: 1% 0px;
+    }
+
+    nav.big_menu ul {
+        display: flex;
+        justify-content: center;
+        padding: 0 10%;
+
+    }
+
+    nav.big_menu a {
+        display:block;
+        border-radius: 5px;
+    }
+
+    nav.big_menu li {
+        background-color: #D0EBFF;
+        text-align: center;
+        border-radius: 5px;
+        display: inline-block;
+        width: 80px;
+        line-height: 80px;
+        margin: 0 5px;
     }
 }
 
@@ -142,16 +246,6 @@ div footer {
 
 @media screen and (min-width:1000px) {
 
-    nav{
-        margin: 0 20vw;
-    }
-
-    nav li {
-        display: inline-block;
-        width: 20%;
-        font-family: 'Merriweather', serif;
-    }
-    
 
     div {
         
@@ -164,6 +258,7 @@ div footer {
         margin: 0 20vw;
         
     }
+
 
     div.banner {
         background-image: url("../images/talent/mreowmi/mreowmi_4.jpg");
